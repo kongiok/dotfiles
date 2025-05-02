@@ -1,12 +1,10 @@
 # ----- Plugins ----- #
-# Plugins directory
-export PLUGINS_PLACE=$HOME/.zsh_modules/
 # Plugins manager install
-if [[ ! -d "$PLUGINS_PLACE/znap" ]]; then
+if [[ ! -d "$FORGEPARTS_DIR/znap" ]]; then
 	git clone --depth 1 https://github.com/marlonrichert/zsh-snap.git $PLUGINS_PLACE/znap
 fi
 # Use plugins manager
-source "$PLUGINS_PLACE/znap/znap.zsh"
+source "$FORGEPARTS_DIR/znap/znap.zsh"
 
 # Syntax Highlighting but much faster
 znap source zdharma-continuum/fast-syntax-highlighting
