@@ -1,7 +1,7 @@
 # ----- Plugins ----- #
 # Plugins manager install
 if [[ ! -d "$FORGEPARTS_DIR/znap" ]]; then
-	git clone --depth 1 https://github.com/marlonrichert/zsh-snap.git $PLUGINS_PLACE/znap
+	git clone --depth 1 https://github.com/marlonrichert/zsh-snap.git $FORGEPARTS_DIR/znap
 fi
 # Use plugins manager
 source "$FORGEPARTS_DIR/znap/znap.zsh"
