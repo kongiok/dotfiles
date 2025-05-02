@@ -1,4 +1,4 @@
-$ZSHCFG="$ZDOTDIR"
+ZSHCFG="$ZDOTDIR"
 
 source $ZSHCFG/env.zsh
 source $ZSHCFG/plugins.zsh
