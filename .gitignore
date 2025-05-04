@@ -1,0 +1,11 @@
+# Z Shell things
+.zsh_history
+
+# Zed Editor data
+*/zed/prompts/
+*/zed/conversations/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
