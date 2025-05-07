@@ -2,4 +2,4 @@
 if [[ -n "$WEZTERM_CONFIG_FILE" ]]; then
   return 0
 fi
-export WEZTERM_CONFIG_FILE=$CONFIG_HOME/terminals/wezterm/wezterm.lua
+export WEZTERM_CONFIG_FILE=$CONFIG_HOME/services/wezterm/wezterm.lua
