@@ -9,3 +9,7 @@
 .DS_Store
 .AppleDouble
 .LSOverride
+
+# Backup files
+*.bak
+*.swp
