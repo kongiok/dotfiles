@@ -1,5 +1,6 @@
 # Z Shell things
 .zsh_history
+*.zwc
 
 # Zed Editor data
 */zed/prompts/
