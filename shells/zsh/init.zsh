@@ -55,3 +55,9 @@ done
 
 # Wait until each process done.
 wait
+
+# Show system info with Fastfetch
+if command -v fastfetch >/dev/null; then
+  clear
+  fastfetch
+fi
