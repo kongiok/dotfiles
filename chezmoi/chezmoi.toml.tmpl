@@ -4,3 +4,14 @@ format = "toml"
 
 [cd]
 command = "z"
+
+{{ if ne .chezmoi.os "windows" }}
+[[hooks.apply.pre]]
+name = "Setup Fish shell as daily developing shell"
+script = "{{ .chezmoi.sourceDir }}/scripts/bootstrap_shell.sh"
+
+[[hooks.apply.pre]]
+name = "Install Fisher Plugins"
+script = "{{ .chezmoi.sourceDir }}/scripts/install_fisher_plugins.fish"
+
+{{ end }}

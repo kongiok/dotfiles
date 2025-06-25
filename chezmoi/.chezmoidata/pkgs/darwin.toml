@@ -1,0 +1,58 @@
+[packages.darwin]
+
+brews = [
+    "chezmoi",        # dotfile manager
+    "mas",            # app store cli installer
+    "p7zip",          # compress cli
+    "bat",            # alternative to cat
+    "bottom",         # alternative to top
+    "fd",             # alternative to find
+    "gping",          # alternative to ping
+    "lsd",            # alternative to ls.    `exa` has been deprecated.
+    "zoxide",         # alternative to cd
+    "ripgrep",        # alternative to grep
+    "tlrc",           # shows command usages
+    "xh",             # alternative to httpie, a better cli for fetching.
+    "fastfetch",      # alternative to neofetch. shows computer info
+    "duf",            # disk utils
+    "fzf",            # Fuzzy finder
+    "fish",           # Fish Shell
+    "neovim",         # I use NeoViM BTW
+    "nvimpager",      # alternative to less. a document reading cli
+    "zellij",         # alternative to tmux. a multiplexer
+    "tree-sitter",
+    "git",            # the most famous version control system
+    "gh",             # GitHub
+    "starship",       # prompt customization
+    "podman",         # containerization
+    "podman-compose", # containerization
+    "sqlite",         # database
+]
+
+casks = [
+    "flox",              # containerization via Nix
+    "podman-desktop",    # containerization
+    "bruno",             # API testing
+    "libreoffice",       # Office suite
+    "wezterm",           # Terminal
+    "zen",               # Browser
+    "zed",               # Editor
+    "obsidian",          # note taking
+    "discord",           # conversation
+    "dbeaver-community", # database editor
+    # Preferred fonts
+    "font-caskaydia-cove-nerd-font",
+    "font-genryumin",
+    "font-gensekigothic",
+    "font-iansui",
+    "font-lxgw-wenkai",
+    "font-lxgw-wenkai-tc",
+]
+
+[[packages.darwin.mas]]
+name = "Bitwarden"
+id = 1352778147
+
+[[packages.darwin.mas]]
+name = "Hand Mirror"
+id = 1502839586
