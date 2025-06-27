@@ -12,6 +12,9 @@
 
 shell = "zsh"
 
+[templates]
+defer = "{% for file in files %}zsh-defer source \"{{ file }}\"\n{% endfor %}"
+
 [plugins]
 
 [plugins.zsh-defer]
@@ -33,5 +36,4 @@ apply = ['defer']
 inline = "eval \"$(starship init zsh)\""
 
 [plugins.zoxide]
-github = "ajeetdsouza/zoxide"
 inline = "eval \"$(zoxide init zsh)\""
