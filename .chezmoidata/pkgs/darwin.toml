@@ -16,7 +16,7 @@ brews = [
     "fastfetch",      # alternative to neofetch. shows computer info
     "duf",            # disk utils
     "fzf",            # Fuzzy finder
-    "fish",           # Fish Shell
+    "sheldon",        # Z shell plugin manager
     "neovim",         # I use NeoViM BTW
     "nvimpager",      # alternative to less. a document reading cli
     "zellij",         # alternative to tmux. a multiplexer
