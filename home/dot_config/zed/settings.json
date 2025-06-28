@@ -80,6 +80,9 @@
     },
     "Python": {
       "tab_size": 4
+    },
+    "TOML": {
+      "tab_size": 4
     }
   },
   "lsp": {
