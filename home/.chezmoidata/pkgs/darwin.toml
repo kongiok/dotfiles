@@ -21,7 +21,6 @@ brews = [
     "nvimpager",      # alternative to less. a document reading cli
     "zellij",         # alternative to tmux. a multiplexer
     "tree-sitter",
-    "git",            # the most famous version control system
     "gh",             # GitHub
     "starship",       # prompt customization
     "podman",         # containerization
