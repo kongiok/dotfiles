@@ -7,14 +7,90 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "ui_font_size": 14.5,
-  "buffer_font_size": 13.5,
+  "vim_mode": true,
+  "autosave": "on_focus_change",
+  "format_on_save": "on",
+  "base_keymap": "Atom",
   "theme": {
     "mode": "system",
     "light": "Catppuccin Latte",
     "dark": "Catppuccin Mocha"
   },
+  "icon_theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha"
+  },
+  "ui_font_size": 14.5,
+  "buffer_font_size": 13.5,
+  "buffer_line_height": "comfortable",
+  "buffer_font_fallbacks": ["Iansui", "LXGW WenKai Mono TC"],
   "terminal": {
-    "font_family": "CaskaydiaCove Nerd Font Propo"
-  }
+    "font_family": "CaskaydiaCove Nerd Font Propo",
+    "copy_on_select": true,
+    "detect_venv": {
+      "on": {
+        "directories": [".env", "env", ".venv", "venv"],
+        "activate_script": "default"
+      }
+    },
+    "dock": "right"
+  },
+
+  "tab_size": 2,
+  "close_on_file_delete": true,
+  "current_line_highlight": "line",
+  "cursor_blink": true,
+  "cursor_shape": "hollow",
+  "hide_mouse": "on_typing_and_movement",
+  "preferred_line_length": 80,
+  "wrap_guides": [65, 80],
+  "soft_wrap": "preferred_line_length",
+  "minimap": {
+    "show": "auto",
+    "thumb": "hover",
+    "thumb_border": "none",
+    "current_line_highlight": "gutter"
+  },
+  "tabs": {
+    "close_position": "right",
+    "file_icons": true,
+    "git_status": true,
+    "activate_on_close": "history",
+    "show_close_button": "hover",
+    "show_diagnostics": "errors"
+  },
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": false,
+    "selections_menu": false,
+    "agent_review": true,
+    "code_actions": true
+  },
+  "languages": {
+    "JavaScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "TypeScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "Python": {
+      "tab_size": 4
+    }
+  },
+  "lsp": {
+    "eslint": {
+      "settings": {
+        "codeActionOnSave": {
+          "rules": ["import/order"]
+        }
+      }
+    }
+  },
+  "use_smartcase_search": true,
+  "show_whitespaces": "trailing"
 }
