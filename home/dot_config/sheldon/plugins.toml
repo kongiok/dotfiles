@@ -41,3 +41,7 @@ inline = "eval \"$(zoxide init zsh)\""
 [plugins.env]
 local = "~/.config/zsh"
 use = ["env.zsh"]
+
+[plugins.alias]
+local = "~/.config/zsh"
+use = ["alias.zsh"]
