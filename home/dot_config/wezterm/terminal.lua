@@ -1,10 +1,12 @@
 local utils = require 'utils'
 local wezterm = require 'wezterm'
+local gpus = wezterm.gui.enumerate_gpus()
 ---@module 'terminal'
 -- Configuration for terminals
 local M = {
   -- I'll update it for sure.
   check_for_updates = false,
+  exit_behavior = "CloseOnCleanExit",
   -- font size
   adjust_window_size_when_changing_font_size = true,
   -- Input method
@@ -27,14 +29,32 @@ local M = {
   cursor_blink_rate = 800,
   -- beep
   audible_bell = "SystemBeep",
-  color_scheme = 'Catppuccin Latte',
+  color_scheme = 'Catppuccin Mocha',
+  -- tabs
   tab_bar_at_bottom = true,
   hide_tab_bar_if_only_one_tab = true,
+  use_fancy_tab_bar = false,
   -- customization for different system
   enable_wayland = false,
   native_macos_fullscreen_mode = false,
   -- default program
   -- default_prog = { '' }
+  notification_handling = "SuppressFromFocusedTab",
+  leader = { key = "Space", mods = "CTRL|SHIFT" },
+  -- UIs
+  webgpu_preferred_adapter = gpus[1],
+  prefer_egl = true,
+  front_end = "WebGpu",
+  window_padding = {
+    left = 10,
+    right = 10,
+    top = 10,
+    bottom = 10,
+  },
+  window_close_confirmation = "AlwaysPrompt",
+  window_background_opacity = 0.75,
+  initial_cols = 120,
+  initial_rows = 35,
 }
 
 

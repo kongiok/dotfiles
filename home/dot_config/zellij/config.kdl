@@ -255,7 +255,7 @@ load_plugins {
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-theme "catppuccin-latte"
+theme "catppuccin-mocha"
 
 // Choose the base input mode of zellij.
 // Default: normal
@@ -430,7 +430,7 @@ stacked_resize true
 // Whether to show tips on startup
 // Default: true
 //
-show_startup_tips true
+show_startup_tips false
 
 // Whether to show release notes on first version run
 // Default: true
