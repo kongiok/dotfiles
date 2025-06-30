@@ -27,7 +27,7 @@ local M = {
   cursor_blink_rate = 800,
   -- beep
   audible_bell = "SystemBeep",
-  color_scheme = 'Catppuccin Mocha',
+  color_scheme = 'Catppuccin Latte',
   tab_bar_at_bottom = true,
   hide_tab_bar_if_only_one_tab = true,
   -- customization for different system
