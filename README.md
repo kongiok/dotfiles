@@ -2,6 +2,12 @@
 
 > a place I put my configs and setups
 
+# Install
+
+```sh
+sh -c "$(curl -fsLS get.chezmoi.io)" -- -b $HOME/.local/bin init --apply kongiok
+```
+
 # Acknowledgements
 
 Most of this setup would not exist — or would exist in a far more chaotic,
