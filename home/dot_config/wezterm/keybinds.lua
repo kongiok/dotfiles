@@ -1,0 +1,2 @@
+--- @module 'keybinds'
+-- A configurations for keybindings
