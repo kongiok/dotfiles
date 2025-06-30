@@ -2,7 +2,8 @@
 
 brews = [
     "chezmoi",        # dotfile manager
-    "mas",            # app store cli installer
+    "mas",            # app store cli installer,
+    "sheldon",        # Z shell plugin manager
     "p7zip",          # compress cli
     "bat",            # alternative to cat
     "bottom",         # alternative to top
