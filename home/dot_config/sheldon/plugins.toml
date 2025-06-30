@@ -45,3 +45,7 @@ use = ["env.zsh"]
 [plugins.alias]
 local = "~/.config/zsh"
 use = ["alias.zsh"]
+
+[plugins.paths]
+local = "~/.config/zsh"
+use = ["paths.zsh"]
