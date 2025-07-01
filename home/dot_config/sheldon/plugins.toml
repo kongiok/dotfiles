@@ -32,6 +32,10 @@ apply = ['defer']
 github = 'zsh-users/zsh-syntax-highlighting'
 apply = ['defer']
 
+[plugins.mise-completions]
+github = "wintermi/zsh-mise"
+apply = ["defer"]
+
 [plugins.starship]
 inline = "eval \"$(starship init zsh)\""
 
