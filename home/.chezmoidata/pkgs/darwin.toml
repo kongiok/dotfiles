@@ -27,10 +27,11 @@ brews = [
     "podman",         # containerization
     "podman-compose", # containerization
     "sqlite",         # database
+		"mise",
 ]
 
 casks = [
-    "flox",              # containerization via Nix
+		#"flox",              # containerization via Nix
     "podman-desktop",    # containerization
     "bruno",             # API testing
     "libreoffice",       # Office suite
