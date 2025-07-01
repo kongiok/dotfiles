@@ -4,8 +4,10 @@
 
 # Install
 
+You could simply install files and dotfiles by using this command:
+
 ```sh
-sh -c "$(curl -fsLS get.chezmoi.io)" -- -b $HOME/.local/bin init --apply kongiok
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/kongiok/dotfiles/main/install.sh)"
 ```
 
 # Acknowledgements
