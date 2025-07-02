@@ -1,3 +1,6 @@
 **/*/local
 **/*/*.local
 **/*/local.*
+
+# macOS
+.DS_Store
