@@ -93,6 +93,10 @@
           "arguments": ["--filename", "{buffer_path}", "--indent", "2"]
         }
       }
+    },
+    "Rust": {
+      "tab_size": 4,
+      "format_on_save": "on"
     }
   },
   "lsp": {
