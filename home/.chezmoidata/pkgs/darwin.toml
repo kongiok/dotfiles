@@ -27,7 +27,7 @@ brews = [
     "podman",         # containerization
     "podman-compose", # containerization
     "sqlite",         # database
-		"mise",
+    "mise",
 ]
 
 casks = [
@@ -36,7 +36,8 @@ casks = [
     "bruno",             # API testing
     "libreoffice",       # Office suite
     "wezterm",           # Terminal
-    "zen",               # Browser
+	#"zen",               # Browser
+    "firefox@developeredition",
     "zed",               # Editor
     "obsidian",          # note taking
     "discord",           # conversation
