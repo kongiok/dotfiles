@@ -1,0 +1,9 @@
+#!/bin/zsh
+
+{{ if eq .chezmoi.os "darwin" }}
+exit 0
+{{ end }}
+
+printf "brew pkg | setting up mac os.\n"
+
+launchctl setenv "SSH_AUTH_SOCKET" "/Users/{{- .user.kongiok.name_display }}/.bitwarden-ssh-agent.sock"

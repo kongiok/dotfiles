@@ -7,6 +7,15 @@
 [help]
     autocorrect = 1
 
+[gpg]
+    format = ssh
+
+[gpg.ssh]
+    allowedSignersFile = "$HOME/.ssh/allowed_signers"
 [user]
-    email = ong.kongiok@gmail.com
-    name = kongiok
+    signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILpwKl3horpcUZv+xiTkJ6K9xTk4JzbPtCA4VcJZwrE/"
+    email =  {{- .user.kongiok.email }}
+    name = {{- .user.kongiok.name_display }}
+
+[commit]
+    gpgsign = true
