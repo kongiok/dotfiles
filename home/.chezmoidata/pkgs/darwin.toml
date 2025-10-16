@@ -22,7 +22,8 @@ brews = [
     "nvimpager",      # alternative to less. a document reading cli
     "zellij",         # alternative to tmux. a multiplexer
     "tree-sitter",
-    "gh",             # GitHub
+	#"gh",             # GitHub
+    "jujutsu",		# VCS `Git` alternative
     "starship",       # prompt customization
     "podman",         # containerization
     "podman-compose", # containerization
@@ -37,11 +38,12 @@ casks = [
     "libreoffice",       # Office suite
     "wezterm",           # Terminal
 	#"zen",               # Browser
-    "firefox@developeredition",
+    "firefox@developer-edition",
     "zed",               # Editor
     "obsidian",          # note taking
     "discord",           # conversation
     "dbeaver-community", # database editor
+    "bitwarden",
     # Preferred fonts
     "font-caskaydia-cove-nerd-font",
     "font-genryumin",
@@ -51,9 +53,6 @@ casks = [
     "font-lxgw-wenkai-tc",
 ]
 
-[[packages.darwin.mas]]
-name = "Bitwarden"
-id = 1352778147
 
 [[packages.darwin.mas]]
 name = "Hand Mirror"
