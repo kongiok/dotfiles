@@ -1,0 +1,9 @@
+[".config/bat/themes/catppuccin"]
+type = "file"
+urls = [
+	"https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Mocha.tmTheme",
+	"https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Macchiato.tmTheme",
+	"https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Frappe.tmTheme",
+	"https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Latte.tmTheme"
+ ]
+
