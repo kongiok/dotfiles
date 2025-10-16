@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-if [[ "$(uname)" -ne "Darwin" ]]; then
-  printf "brew pkgs | this script is only for macOS" >&2
+if [[ "$(uname)" != "Darwin" ]]; then
   exit 0
 fi
 
