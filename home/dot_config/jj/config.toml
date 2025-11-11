@@ -1,0 +1,9 @@
+#:schema https://jj-vcs.github.io/jj/latest/config-schema.json
+
+[user]
+name = "Ong Kong Giok"
+email = "ong.kongiok@proton.me"
+
+[ui]
+pager = "nvimpager"
+editor = "nvim"
