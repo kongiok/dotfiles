@@ -7,7 +7,7 @@
 You could simply install files and dotfiles by using this command:
 
 ```sh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/kongiok/dotfiles/main/install.sh)"
+sh -c "$(curl -fsSL https://chezmoi.io/get)" -- init --apply kongiok/dotfiles
 ```
 
 # Acknowledgements
