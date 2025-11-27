@@ -17,7 +17,6 @@ brews = [
     "fastfetch",      # alternative to neofetch. shows computer info
     "duf",            # disk utils
     "fzf",            # Fuzzy finder
-    "sheldon",        # Z shell plugin manager
     "neovim",         # I use NeoViM BTW
     "nvimpager",      # alternative to less. a document reading cli
     "zellij",         # alternative to tmux. a multiplexer
@@ -25,25 +24,29 @@ brews = [
 	#"gh",             # GitHub
     "jujutsu",		# VCS `Git` alternative
     "starship",       # prompt customization
-    "podman",         # containerization
-    "podman-compose", # containerization
+	#"podman",         # containerization
+	#"podman-compose", # containerization
     "sqlite",         # database
     "mise",
+    "ollama",
 ]
 
 casks = [
-		#"flox",              # containerization via Nix
-    "podman-desktop",    # containerization
-    "bruno",             # API testing
+	#"flox",              # containerization via Nix
+	#"podman-desktop",    # containerization
+    "docker-desktop",
+	#"bruno",             # API testing
     "libreoffice",       # Office suite
     "wezterm",           # Terminal
-	#"zen",               # Browser
+    #"zen",               # Browser
     "firefox@developer-edition",
     "zed",               # Editor
-    "obsidian",          # note taking
-    "discord",           # conversation
+    #"obsidian",          # note taking
+    "logseq",
+	#"discord",           # conversation
     "dbeaver-community", # database editor
-    "bitwarden",
+    "ollama-app",
+    "yaak",
     # Preferred fonts
     "font-caskaydia-cove-nerd-font",
     "font-genryumin",
@@ -57,3 +60,7 @@ casks = [
 [[packages.darwin.mas]]
 name = "Hand Mirror"
 id = 1502839586
+
+[[packages.darwin.mas]]
+name = "Bitwarden"
+id = 1352778147
