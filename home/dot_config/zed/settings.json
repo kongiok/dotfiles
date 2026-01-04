@@ -14,12 +14,12 @@
   "theme": {
     "mode": "system",
     "light": "Catppuccin Latte",
-    "dark": "Catppuccin Mocha"
+    "dark": "Catppuccin Mocha",
   },
   "icon_theme": {
     "mode": "system",
     "light": "Catppuccin Latte",
-    "dark": "Catppuccin Mocha"
+    "dark": "Catppuccin Mocha",
   },
   "ui_font_size": 14.5,
   "buffer_font_size": 13.5,
@@ -31,10 +31,10 @@
     "detect_venv": {
       "on": {
         "directories": [".env", "env", ".venv", "venv"],
-        "activate_script": "default"
-      }
+        "activate_script": "default",
+      },
     },
-    "dock": "right"
+    "dock": "right",
   },
 
   "tab_size": 2,
@@ -50,7 +50,7 @@
     "show": "auto",
     "thumb": "hover",
     "thumb_border": "none",
-    "current_line_highlight": "gutter"
+    "current_line_highlight": "gutter",
   },
   "tabs": {
     "close_position": "right",
@@ -58,31 +58,31 @@
     "git_status": true,
     "activate_on_close": "history",
     "show_close_button": "hover",
-    "show_diagnostics": "errors"
+    "show_diagnostics": "errors",
   },
   "toolbar": {
     "breadcrumbs": true,
     "quick_actions": false,
     "selections_menu": false,
     "agent_review": true,
-    "code_actions": true
+    "code_actions": true,
   },
   "languages": {
     "JavaScript": {
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
-      }
+        "source.fixAll.eslint": true,
+      },
     },
     "TypeScript": {
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
-      }
+        "source.fixAll.eslint": true,
+      },
     },
     "Python": {
-      "tab_size": 4
+      "tab_size": 4,
     },
     "TOML": {
-      "tab_size": 4
+      "tab_size": 4,
     },
     "Shell Script": {
       "hard_tabs": false,
@@ -90,24 +90,45 @@
       "formatter": {
         "external": {
           "command": "shfmt",
-          "arguments": ["--filename", "{buffer_path}", "--indent", "2"]
-        }
-      }
+          "arguments": ["--filename", "{buffer_path}", "--indent", "2"],
+        },
+      },
     },
     "Rust": {
       "tab_size": 4,
-      "format_on_save": "on"
-    }
+      "format_on_save": "on",
+    },
   },
   "lsp": {
     "eslint": {
       "settings": {
         "codeActionOnSave": {
-          "rules": ["import/order"]
-        }
-      }
-    }
+          "rules": ["import/order"],
+        },
+      },
+    },
   },
   "use_smartcase_search": true,
-  "show_whitespaces": "trailing"
+  "show_whitespaces": "trailing",
+
+  "agent": {
+    "default_model": {
+      "provider": "lmstudio",
+      "model": "deepseek/deepseek-r1-0528-qwen3-8b",
+    },
+    "inline_assistant_model": {
+      "provider": "lmstudio",
+      "model": "google/gemma-3-12b",
+    },
+    "inline_alternatives": [
+      { "provider": "lmstudio", "model": "qwen/qwen3-14b" },
+      { "provider": "lmstudio", "model": "openai/gpt-oss-20b" },
+    ],
+    "commit_message_model": {
+      "provider": "lmstudio",
+      "model": "ibm/granite-4-h-tiny",
+    },
+    "model_parameters": [],
+    "always_allow_tool_actions": true,
+  },
 }
