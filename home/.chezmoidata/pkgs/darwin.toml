@@ -47,6 +47,14 @@ casks = [
     "dbeaver-community", # database editor
     "ollama-app",
     "yaak",
+    # Plugins
+    "hiddenbar",        # top bar clarifier
+    "itsycal",          # Tiny Calendar
+    "monitorcontrol",   # awesome dual monitor utils
+    "keepingyouawake",  # like it says, keeping your computer awake
+    "pika",             # colour picker
+    "iina",             # media player, yet powerful,
+    "background-music", # volumes control
     # Preferred fonts
     "font-caskaydia-cove-nerd-font",
     "font-genryumin",
