@@ -1,11 +1,12 @@
 local wezterm = require 'wezterm'
-local config = wezterm.config_builder()
-config:set_strict_mode(true)
 local utils = require 'utils'
+local config = wezterm.config_builder()
 
--- Local Configs
-local core_config = {}
-utils.merge_tables(core_config, require 'terminal')
+config:set_strict_mode(true)
 
-config = core_config
+utils.merge_tables(config, require 'terminal')
+utils.merge_tables(config, require 'keybinds')
+
+require('events').apply_to_config(config)
+
 return config

@@ -1,21 +1,16 @@
 local utils = require 'utils'
 local wezterm = require 'wezterm'
 local gpus = wezterm.gui.enumerate_gpus()
----@module 'terminal'
--- Configuration for terminals
+
+--- @module 'terminal'
 local M = {
-  -- I'll update it for sure.
   check_for_updates = false,
   exit_behavior = "CloseOnCleanExit",
-  -- font size
   adjust_window_size_when_changing_font_size = true,
-  -- Input method
   use_ime = true,
   ime_preedit_rendering = "Builtin",
-  -- keys
   use_dead_keys = false,
   warn_about_missing_glyphs = false,
-  -- animations
   animation_fps = 10,
   visual_bell = {
     fade_in_function = 'Linear',
@@ -27,58 +22,31 @@ local M = {
   cursor_blink_ease_in = "EaseInOut",
   default_cursor_style = "BlinkingBlock",
   cursor_blink_rate = 800,
-  -- beep
   audible_bell = "SystemBeep",
   color_scheme = 'Catppuccin Mocha',
-  -- tabs
   tab_bar_at_bottom = true,
   hide_tab_bar_if_only_one_tab = true,
   use_fancy_tab_bar = false,
-  -- customization for different system
-  enable_wayland = false,
-  native_macos_fullscreen_mode = false,
-  -- default program
-  -- default_prog = { '' }
+  window_decorations = "RESIZE",
   notification_handling = "SuppressFromFocusedTab",
   leader = { key = "Space", mods = "CTRL|SHIFT" },
-  -- UIs
   webgpu_preferred_adapter = gpus[1],
   prefer_egl = true,
   front_end = "WebGpu",
-  window_padding = {
-    left = 10,
-    right = 10,
-    top = 10,
-    bottom = 10,
-  },
+  window_padding = { left = 10, right = 10, top = 10, bottom = 10 },
   window_close_confirmation = "AlwaysPrompt",
   window_background_opacity = 0.75,
   initial_cols = 120,
   initial_rows = 35,
 }
 
+local os_type = utils.get_current_os()
 
--- color scheme change
--- local current_appearance = wezterm.gui.get_appearance()
--- if current_appearance == ("Light" or "LightHighContrast")
--- then
---   M.color_scheme = "Catppuccin Latte"
--- else
---   M.color_scheme = "Catppuccin Mocha"
--- end
-
--- customization of macOS
-if utils.get_current_os() == "DARWIN" then
+if os_type == "DARWIN" then
   M.native_macos_fullscreen_mode = true
-end
-
--- customization of linux
-if utils.get_current_os() == "LINUX" then
+elseif os_type == "LINUX" then
   local current_session_type = os.getenv("XDG_SESSION_TYPE")
-  if current_session_type == "wayland" then
-    M.enable_wayland = true
-  end
-  M.enable_wayland = false
+  M.enable_wayland = (current_session_type == "wayland")
 end
 
 return M
