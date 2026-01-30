@@ -1,24 +1,27 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "provider": {
-    "lmstudio": {
+    "ollama": {
       "npm": "@ai-sdk/openai-compatible",
-      "name": "LM Studio (local)",
+      "name": "Ollama (Local)",
       "options": {
-        "baseURL": "http://127.0.0.1:1234/v1"
+        "baseURL": "http://localhost:11434/v1"
       },
       "models": {
-        "microsoft/phi-4-mini-reasoning": {
-          "name": "phi-4-mini-reasoning"
+        "gemma3:12b": {
+          "name": "Gemma 3 (12B)"
         },
-        "google/gemma-3-12b": {
-          "name": "gemma-3-12b"
+        "gemma3:4b": {
+          "name": "Gemma 3 (4B)"
         },
-        "qwen/qwen3-14b": {
-          "name": "qwen3-14b"
+        "deepseek-r1:8b": {
+          "name": "DeepSeek R1 (8B)"
         },
-        "mistralai/devstral-small-2-2512": {
-          "name": "devstral-small-2-2512"
+        "deepseek-coder:6.7b": {
+          "name": "DeepSeek Coder (6.7B)"
+        },
+        "qwen3:14b": {
+          "name": "Qwen 3 (14B)"
         }
       }
     }

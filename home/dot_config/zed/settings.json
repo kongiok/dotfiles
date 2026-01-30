@@ -114,20 +114,20 @@
   "agent": {
     "default_profile": "ask",
     "default_model": {
-      "provider": "lmstudio",
-      "model": "qwen/qwen3-14b",
+      "provider": "ollama",
+      "model": "gemma3:12b",
     },
     "inline_assistant_model": {
-      "provider": "lmstudio",
-      "model": "google/gemma-3-12b",
+      "provider": "ollama",
+      "model": "qwen2.5-coder:7b",
     },
     "inline_alternatives": [
-      { "provider": "lmstudio", "model": "qwen/qwen3-14b" },
-      { "provider": "lmstudio", "model": "openai/gpt-oss-20b" },
+      { "provider": "ollama", "model": "deepseek-coder:6.7b" },
+      { "provider": "ollama", "model": "openai/gpt-oss-20b" },
     ],
     "commit_message_model": {
-      "provider": "lmstudio",
-      "model": "qwen2.5-0.5b-instruct-mlx",
+      "provider": "ollama",
+      "model": "gemma3:4b",
     },
     "model_parameters": [],
     "always_allow_tool_actions": true,
