@@ -6,3 +6,7 @@ theme = light:Catppuccin Latte,dark:Catppuccin Mocha
 #       OS Specific
 # =========================
 # config-file = ?os/macOS.config
+
+#       Shell Setups
+# =========================
+shell-integration = zsh

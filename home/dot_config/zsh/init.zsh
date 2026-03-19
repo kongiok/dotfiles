@@ -11,6 +11,7 @@ typeset -A should_open_zellij=(
   ZED_TERM        false
   TTY             true
   SSH             true
+  ghostty         false
 )
 
 local current_env="$TERM_PROGRAM"
