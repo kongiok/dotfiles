@@ -1,0 +1,8 @@
+#       Emulator Setup
+# =========================
+font-family = CaskaydiaCove NFM
+theme = light:Catppuccin Latte,dark:Catppuccin Mocha
+
+#       OS Specific
+# =========================
+# config-file = ?os/macOS.config

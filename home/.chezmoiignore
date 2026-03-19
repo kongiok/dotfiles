@@ -1,0 +1,6 @@
+# mac OS Specific
+{{- if eq .chezmoi.os "darwin" }}
+**/.DS_Store
+00_Inbox
+40_Archives
+{{- end }}
