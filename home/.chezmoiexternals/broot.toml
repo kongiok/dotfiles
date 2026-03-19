@@ -1,0 +1,5 @@
+[".config/broot/skins/catppuccin-latte.hjson"]
+type = "file"
+urls = [
+    "https://github.com/catppuccin/broot/blob/main/themes/latte/catppuccin-latte-flamingo.hjson"
+]
