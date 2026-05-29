@@ -36,25 +36,23 @@ casks = [
 	#"podman-desktop",    # containerization
     "docker-desktop",
 	#"bruno",             # API testing
+    "yaak",                 # API Testing
     "libreoffice",       # Office suite
-    "wezterm",           # Terminal
-    #"zen",               # Browser
-    "firefox@developer-edition",
+    #"wezterm",           # Terminal
+    "zen",               # Browser
+    "firefox@developer-edition",   # Browser
     "zed",               # Editor
     #"obsidian",          # note taking
-    "logseq",
+    #"logseq",
 	#"discord",           # conversation
-    "dbeaver-community", # database editor
-    "ollama-app",
-    "yaak",
+    #"dbeaver-community", # database editor
+    #"ollama-app",
     # Plugins
     "hiddenbar",        # top bar clarifier
-    "itsycal",          # Tiny Calendar
     "monitorcontrol",   # awesome dual monitor utils
     "keepingyouawake",  # like it says, keeping your computer awake
     "pika",             # colour picker
     "iina",             # media player, yet powerful,
-    "background-music", # volumes control
     # Preferred fonts
     "font-caskaydia-cove-nerd-font",
     "font-genryumin",
