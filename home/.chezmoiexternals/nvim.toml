@@ -1,4 +1,4 @@
 [".config/nvim"]
 type = "git-repo"
-url = "https://github.com/kongiok/stellarforge.nvim.git"
-refreshPeriod = "168h"
+url = "git@github.com:kongiok/prism.nvim.git"
+refreshPeriod = "1h"
