@@ -29,6 +29,7 @@ brews = [
     "sqlite",         # database
     "mise",
     "ollama",
+    "kando"
 ]
 
 casks = [
@@ -44,7 +45,7 @@ casks = [
     "zed",               # Editor
     #"obsidian",          # note taking
     #"logseq",
-	#"discord",           # conversation
+   "discord",           # conversation
     #"dbeaver-community", # database editor
     #"ollama-app",
     # Plugins
@@ -53,6 +54,7 @@ casks = [
     "keepingyouawake",  # like it says, keeping your computer awake
     "pika",             # colour picker
     "iina",             # media player, yet powerful,
+    "keka",             # pkg compress utils
     # Preferred fonts
     "font-caskaydia-cove-nerd-font",
     "font-genryumin",
